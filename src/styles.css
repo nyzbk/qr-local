@@ -57,6 +57,64 @@
   }
 }
 
+.prose-mark {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+}
+
+.prose-mark > * + * {
+  margin-top: 1rem;
+}
+
+.prose-mark h2 {
+  margin-top: 1.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.prose-mark h3 {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.prose-mark ul,
+.prose-mark ol {
+  padding-left: 1.25rem;
+}
+
+.prose-mark ul {
+  list-style: disc;
+}
+
+.prose-mark ol {
+  list-style: decimal;
+}
+
+.prose-mark li + li {
+  margin-top: 0.35rem;
+}
+
+.prose-mark a {
+  color: var(--color-accent);
+  text-underline-offset: 2px;
+}
+
+.prose-mark a:hover {
+  text-decoration: underline;
+}
+
+.prose-mark strong {
+  font-weight: 600;
+}
+
+.prose-mark code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

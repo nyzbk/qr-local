@@ -32,18 +32,7 @@ export function AdUnit({ slot, className }: Props) {
   }, [live, client, slotId]);
 
   if (!live || !client || !slotId) {
-    return (
-      <aside
-        data-ad-slot={slot}
-        aria-label="Advertisement placeholder"
-        className={cn(
-          "flex min-h-16 items-center justify-center rounded-card border border-dashed border-border bg-surface px-4 py-5 text-center",
-          className,
-        )}
-      >
-        <p className="font-mono text-xs tracking-wide text-muted uppercase">Ad slot — {slot}</p>
-      </aside>
-    );
+    return null;
   }
 
   return (

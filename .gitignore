@@ -10,6 +10,5 @@ tmp
 .env
 .env.*
 !.env.example
-.grok
-AGENTS.md
-AGENTS.project.md
+.project_id
+attachments/
